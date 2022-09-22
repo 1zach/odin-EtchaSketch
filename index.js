@@ -2,7 +2,7 @@ const container = document.getElementById("container");
 const gridbox = document.getElementById("grid")
 let on = true;
 let paintW = false;
-let color = "black"
+let color = "gray"
 let box = 1
 const smallGrid = document.getElementById("small")
 const mediumGrid = document.getElementById("medium")
@@ -69,7 +69,7 @@ largeGrid.addEventListener('click', function() {
         }
     }
 
-    paintWhite("black")
+    paintWhite("gray")
 }
 
 function setColor() {
