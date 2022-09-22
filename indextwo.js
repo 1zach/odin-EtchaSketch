@@ -82,7 +82,7 @@ function gridReset() {
     box.remove()
     })
     opacity = true;
-    paintBrush(opacity)
+    //paintBrush(opacity)
 }
 //this function starts over completely
 function gridResetClear() {

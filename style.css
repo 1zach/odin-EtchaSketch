@@ -1,57 +1,113 @@
-
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: grey;
+    background-color: rgb(51, 51, 51);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 98vh
+    height: 100vh
 
 }
 .header {
-    padding-bottom: 10px;
-}
-.container {
     
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: gold;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font: bold arial, sans-serif;
+    background-color: gold;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+h2 {
+    padding: 0px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font: bold arial, sans-serif;
+    background-color: gold;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+     -moz-background-clip: text;
+    background-clip: text;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,0,1) 5%, rgba(255,0,0,1) 95%, rgba(255,255,255,1) 100%);;
+    padding: 10px 40px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;    
+    margin: 20px;
+}
+
+.etch-a-sketch {
+    display:flex;
+}
+
+.grids {
+    width: 660px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.gridshadowbox {
+    width: 640px;
+    height: 640px;
+    border-top: 10px outset #000000;
+    border-right: 10px inset #ffffff;
+    border-bottom: 10px inset #000000;
+    border-left: 10px outset #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px -1px 11px 7px rgba(0,0,0,0.8) inset;
+    padding: 2px 3px;
+}
+
+.grid {
     width: 640px;
     height: 640px;
     background-color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-   
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .box {
     background-color: black;
     box-sizing: border-box;
     border: 1px solid white;
-    
-    
 }
 
 label {
     color: white;
 }
 
-button {
-    background-color: white;
-    padding: 10px;
-    height: 2rem;
-    width: 6rem;
-    color: black;
-    text-align: center;
-    margin: 0 auto;
-}
+
 
 button:hover {
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.404);
 }
 
 .buttons {
@@ -63,9 +119,113 @@ button:hover {
 .sizes, .colors {
     display:flex;
     flex-direction: column;
-    
+    align-items:center;
+    margin: auto 0;
 }
 
 .white {
     background-color: white;
 }
+
+button {
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    border:none;
+    box-shadow: none;
+    margin: 6px;
+    padding: 0;
+    height: 2rem;
+    width: 6rem;
+}
+
+#eraser {
+    height: 2rem;
+    position: relative;
+    
+}
+
+#rainbow {
+    border-radius: 100rem;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(113deg, rgba(255,0,0,1) 0%, rgba(255,160,0,1) 22%, rgba(230,255,0,1) 40%, rgba(0,255,6,1) 55%, rgba(6,0,255,1) 76%, rgba(237,0,255,1) 93%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    opacity: .9;
+  }
+  
+  #rainbow:hover {
+    box-shadow: none;
+    color: white;
+    opacity: .9;
+  }
+       
+  
+  #fade {
+    border-radius: 100rem;
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    border: solid 3px transparent;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(113deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 81%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 2px 1000px 1px #fff inset;
+    opacity: .9;
+  }
+  
+  #fade:hover {
+    box-shadow: none;
+    color: white;
+    opacity: .9;
+  }
+
+  #white {
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    opacity: .9;
+    background-color: white;
+    border-radius: 100rem;
+
+  }
+  
+  #white:hover {
+    box-shadow: none;
+    color: white;
+    opacity: .9;
+  }
+
+  #black {
+      border-radius: 100rem;
+  }
+
+  #black:hover {
+      color: white;;
+      background-color: rgba(0, 0, 0, 0.808);
+  }
+
+  #small, #medium, #large, #eraser {
+    color: black;
+    box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+    opacity: .9;
+    background-color: white;
+    border-radius: 100rem;
+  }
+
+  .ghlink {
+      color:black;
+      text-decoration:none;
+      padding-top: 10px;
+      
+      
+  }
+
+  .footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
