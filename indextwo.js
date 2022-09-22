@@ -4,8 +4,6 @@ const smallGrid = document.getElementById("small")
 const mediumGrid = document.getElementById("medium")
 const largeGrid = document.getElementById("large")
 
-let opacityReducer = false;
-let rainbows = false;
 let gridSize = 8;
 const space = document.getElementById("container")
 
